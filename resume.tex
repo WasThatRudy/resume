@@ -1,0 +1,198 @@
+%------------------------
+% Resume Template
+% Author : Anubhav Singh
+% Github : https://github.com/xprilion
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Rudraksha Singh Sengar}} & Email: \href{mailto:}{rudraksharss@gmail.com}\\
+  \href{https://github.com/WasThatRudy}{Github: github.com/WasThatRudy} & Mobile:+91-708-1499-993 \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Dayananda Sagar College of Engineering, Bangalore}{Karnataka, India}
+      {Bachelor of Engineering - Computer Science and Engineering; \textbf{SGPA:8.2}}{November 2023}
+       
+    \resumeSubHeadingListEnd    
+\vspace{5pt}
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+    \resumeSubItem{Languages}{Python, C, C++, \textbf{JavaScript, TypeScript}}
+    \resumeSubItem{Frontend Frameworks}{\textbf{React}, \textbf{Next.js}}
+    \resumeSubItem{CSS Frameworks}{\textbf{Tailwind CSS}}
+    \resumeSubItem{JavaScript Libraries}{\textbf{Three.js}}
+    \resumeSubItem{Tools}{\textbf{Git/Github}}
+    \resumeSubItem{Platforms}{Windows, Linux}
+  \resumeSubHeadingListEnd
+
+
+\vspace{5pt}
+\section{Experience}
+  \resumeSubHeadingListStart
+
+\resumeSubheading
+  {RemoteStar}{Remote}
+  {Frontend Developer: Next.js, Typescript, Framer Motion, Tailwind CSS}{March 2025 - Present}
+
+  \resumeItemListStart
+
+    \resumeItem{Frontend Development}
+      {Developed the entire frontend of RemoteStar’s website using \textbf{Next.js}, \textbf{Tailwind CSS}, and \textbf{Framer Motion}.}
+
+    \resumeItem{UI/UX Design}
+      {Designed an intuitive and visually appealing user interface for an \textbf{AI-powered online interview platform}.}
+
+    \resumeItem{Backend Connectivity}
+      {Integrated the frontend with the backend, ensuring seamless \textbf{API communication} and \textbf{data flow}.}
+
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+    
+\vspace{5pt}
+\section{Open Source Contributions}
+\resumeSubHeadingListStart
+	\resumeSubItem{Hacktoberfest 2024}{Successfully completed 4 pull requests (PRs) contributing to open-source projects during Hacktoberfest. 
+		\begin{itemize}
+			\item Added an \textbf{export button} to a website, allowing users to export datasets in CSV, JSON, and TXT formats.
+			\item Implemented \textbf{hover-over tooltips} that describe the functionality of the export button.
+			\item Customized the \textbf{front-end design} of buttons to improve the user interface and overall user experience.
+			\item Designed and added a \textbf{favicon} to the website for improved branding and visual appeal.
+		\end{itemize}
+	}
+\resumeSubHeadingListEnd
+
+\vspace{5pt}
+\section{Volunteering}
+  \resumeSubHeadingListStart
+
+\resumeSubheading
+  {PointBlank (Coding Club)}{Member}
+  {Frontend Developer: Next.js, Typescript, Framer Motion, Tailwind CSS, Cloudinary}{February 2025 - Present}
+
+\resumeItemListStart
+  \resumeItem{Custom Loader}
+    {Designed and implemented a reusable, aesthetic \textbf{Framer Motion}-based loader displayed across all pages.}
+    
+  \resumeItem{Lore Page}
+    {Built the entire \href{https://pointblank.club/lore}{\textcolor{blue}{/lore}} page — from \textbf{UI/UX design} to responsive frontend development using \textbf{Next.js} and \textbf{Tailwind CSS}.}
+    
+  \resumeItem{PBCTF Form Page}
+    {Designed and developed the full \href{https://pointblank.club/pbctf}{\textcolor{blue}{/pbctf}} registration page, including form logic, UI, and frontend implementation.}
+\resumeItemListEnd
+\vspace{5pt}
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\vspace{-5pt}
+\section{Projects}
+\resumeSubHeadingListStart
+\vspace{2pt}
+\resumeSubItem{Zenith – 36-hour Competitive Tech Event  
+\href{https://github.com/pbdsce/zenith}{\color{blue}{GitHub}}/\href{https://zenith.pointblank.club}{\color{blue}{Deployment}}} {
+    \begin{itemize}
+        \item Designed the entire \textbf{UI/UX} and developed the \textbf{front-end} for the event website.  
+        \item Built a responsive, high-performance website using \textbf{Next.js} and \textbf{Tailwind CSS}.  
+        \item Ensured seamless \textbf{user experience} with intuitive navigation, accessibility, and optimized performance.  
+        \item Tech: \textbf{Next.js}, \textbf{TypeScript}, \textbf{Tailwind CSS}, \textbf{Framer Motion} 
+    \end{itemize}
+    }
+
+\resumeSubItem{Sinkedin - A platform to celebrate failure  \href{https://github.com/rudrakshass/Sinkedin}{\color{blue}{GitHub}}/\href{https://sinkedin.xyz}{\color{blue}{Deployment}}} {
+    \begin{itemize}
+        \item Developed a platform allowing users to share their failures and gain community support.
+        \item Built the \textbf{front-end} using \textbf{React}, \textbf{TypeScript}, and \textbf{Tailwind CSS}.
+        \item Styled with \textbf{Tailwind}, ensuring a clean, modern design for desktop and mobile.
+        \item Tech: \textbf{Next.js}, \textbf{TypeScript}, \textbf{Tailwind CSS}, \textbf{Framer Motion}
+    \end{itemize}
+}
+
+\resumeSubHeadingListEnd
+
+\vspace{5pt}
+\section{Achievements}
+\resumeSubHeadingListStart
+  \resumeSubItem{Technical Escape Room (CTF)}{Secured \textbf{1st place} among 35 teams in a competitive, time-bound Capture The Flag challenge — March 2025.}
+  \resumeSubItem{NER Tech Hackathon}{Selected as a \textbf{Finalist} in a national-level hackathon organized by \textbf{Amantya Technologies}.}
+  \resumeSubItem{Aventus Hackathon}{Selected as a \textbf{Finalist} in a hackathon organized by \textbf{Dayananda Sagar College of Engineering}.}
+\resumeSubHeadingListEnd
+\end{document}
