@@ -1,0 +1,233 @@
+%------------------------
+% Resume
+%------------------------
+
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Rudraksha Singh Sengar}}\\
+  \href{mailto:rudraksharss@gmail.com}{Email: rudraksharss@gmail.com} &
+  \href{https://github.com/WasThatRudy}{Github: github.com/WasThatRudy} \\
+  Mobile: +91-708-1499-993 &
+  \href{https://www.linkedin.com/in/rudrakshasingh18/}{LinkedIn: linkedin.com/in/rudrakshasingh18} \\
+\end{tabular*}
+
+\vspace{-3pt}
+
+%-----------SKILLS-----------------
+\section{Skills}
+\resumeSubHeadingListStart
+  \resumeSubItem{Languages}{\textbf{JavaScript, TypeScript}, HTML, CSS}
+  \resumeSubItem{Frontend}{\textbf{React, Next.js, Tailwind CSS}}
+  \resumeSubItem{Libraries}{\textbf{Zustand, React Query, Framer Motion}, Three.js}
+  \resumeSubItem{Testing \& Tools}{\textbf{React Testing Library, ESLint, Git/GitHub}, DCO sign-off}
+  \resumeSubItem{Platforms}{Linux, Windows}
+\resumeSubHeadingListEnd
+
+\vspace{-3pt}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {PRED (PangoLabs)}{Bangalore}
+  {SDE Intern: React, Zustand, Tailwind CSS, React Query}{Nov 2025 -- Mar 2026}
+
+\resumeItemListStart
+
+  \resumeItem{UI Implementation}
+    {Converted \textbf{Figma designs} into reusable, responsive \textbf{React} components with a focus on consistency, maintainability, and production-ready UI.}
+
+  \resumeItem{Frontend Engineering}
+    {Built a high-performance \textbf{React + Vite} frontend using \textbf{Tailwind CSS} and \textbf{Zustand} for predictable global and local state management.}
+
+  \resumeItem{Data \& APIs}
+    {Integrated frontend components with backend services using \textbf{React Query}, implementing cached data fetching, loading states, and resilient API-driven UI.}
+
+\resumeItemListEnd
+
+\resumeSubheading
+  {RemoteStar}{Remote}
+  {SDE Intern: Next.js, TypeScript, Framer Motion, Tailwind CSS}{Mar 2025 -- Nov 2025}
+
+\resumeItemListStart
+
+  \resumeItem{Frontend Development}
+    {Developed the frontend of an \textbf{AI-powered online interview platform} using \textbf{Next.js}, TypeScript, Tailwind CSS, and Framer Motion.}
+
+  \resumeItem{UI/UX Implementation}
+    {Designed and implemented responsive interfaces focused on usability, consistency, and smooth user interactions.}
+
+  \resumeItem{API Integration}
+    {Connected frontend components with backend services, maintaining clean \textbf{API communication} and reliable data flow.}
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{-3pt}
+
+%-----------OPEN SOURCE-----------------
+\section{Open Source Contributions}
+\resumeSubHeadingListStart
+
+\resumeSubItem{Headlamp \href{https://github.com/kubernetes-sigs/headlamp}{\color{blue}{(CNCF, kubernetes-sigs/headlamp)}}}{
+    \begin{itemize}
+        \item Shipped \textbf{10+ contributions} to the Kubernetes web UI, working across CRD list components, the resource-map relations graph, router internals, units helpers, resource-table identity, API-discovery logging, and the story-test layer.
+        \item Worked within an existing \textbf{TypeScript/React} codebase using \textbf{React Testing Library} and ESLint, contributing changes across UI, application logic, and testing infrastructure.
+    \end{itemize}
+}
+
+\resumeSubHeadingListEnd
+
+\vspace{-3pt}
+
+%-----------FREELANCE-----------------
+\section{Freelance Projects}
+\resumeSubHeadingListStart
+
+\resumeSubItem{CompilerTech -- \href{https://compilertech.org}{\color{blue}{Official Website Deployment}}} {
+    \begin{itemize}
+        \item Built and deployed the official CompilerTech website as a freelance frontend developer, delivering a responsive, high-performance interface with clean \textbf{UI/UX} and smooth interactions.
+        \item Focused on accessibility, responsive behavior, and consistent performance across mobile and desktop.
+        \item Tech: \textbf{Next.js}, \textbf{TypeScript}, \textbf{Tailwind CSS}, \textbf{Framer Motion}
+    \end{itemize}
+}
+
+\resumeSubItem{Segfault -- \href{https://segfault.compilertech.org/}{\color{blue}{Official Hackathon Website Deployment}}} {
+    \begin{itemize}
+        \item Developed and deployed the official Segfault Hackathon website with a dynamic, responsive frontend and smooth \textbf{Framer Motion} interactions.
+        \item Implemented event details, timeline, and submission sections with a scalable, component-based interface.
+        \item Tech: \textbf{Next.js}, \textbf{TypeScript}, \textbf{Tailwind CSS}
+    \end{itemize}
+}
+
+\resumeSubHeadingListEnd
+
+\vspace{-3pt}
+
+%-----------VOLUNTEERING-----------------
+\section{Volunteering}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {PointBlank (Coding Club)}{Member}
+  {Frontend Developer: Next.js, TypeScript, Framer Motion, Tailwind CSS, Cloudinary}{Feb 2025 -- Present}
+
+\resumeItemListStart
+
+  \resumeItem{Reusable UI}
+    {Designed and implemented a reusable \textbf{Framer Motion}-based loader used across the website.}
+
+  \resumeItem{Page Development}
+    {Built the entire \href{https://pointblank.club/lore}{\textcolor{blue}{/lore}} page from UI/UX design through responsive frontend implementation using \textbf{Next.js} and \textbf{Tailwind CSS}.}
+
+  \resumeItem{Form Development}
+    {Designed and developed the PBCTF registration page, including form logic, UI, and frontend implementation.}
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{-3pt}
+
+%-----------ACHIEVEMENTS-----------------
+\section{Achievements}
+\resumeSubHeadingListStart
+
+  \resumeSubItem{Technical Escape Room (CTF)}
+    {Secured \textbf{1st place} among 35 teams in a competitive, time-bound Capture The Flag challenge -- March 2025.}
+
+  \resumeSubItem{NER Tech Hackathon}
+    {Selected as a \textbf{Finalist} in a national-level hackathon organized by \textbf{Amantya Technologies}.}
+
+  \resumeSubItem{Aventus Hackathon}
+    {Selected as a \textbf{Finalist} in a hackathon organized by \textbf{Dayananda Sagar College of Engineering}.}
+
+\resumeSubHeadingListEnd
+
+\vspace{-3pt}
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Dayananda Sagar College of Engineering, Bangalore}{Karnataka, India}
+    {Bachelor of Engineering - Computer Science and Engineering; \textbf{CGPA: 7.65}}{Nov 2023 -- Present}
+
+\resumeSubHeadingListEnd
+
+\end{document}
