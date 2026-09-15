@@ -24,7 +24,7 @@
 \addtolength{\oddsidemargin}{-0.530in}
 \addtolength{\evensidemargin}{-0.375in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.45in}
+\addtolength{\topmargin}{-0.6in}
 \addtolength{\textheight}{1.3in}
 
 \urlstyle{rm}
@@ -89,10 +89,11 @@
 \section{Skills}
 \resumeSubHeadingListStart
   \resumeSubItem{Languages}{\textbf{JavaScript, TypeScript}, HTML, CSS}
-  \resumeSubItem{Frontend}{\textbf{React, Next.js, Tailwind CSS}}
-  \resumeSubItem{Libraries}{\textbf{Zustand, React Query, Framer Motion}, Three.js}
-  \resumeSubItem{Testing \& Tools}{\textbf{React Testing Library, ESLint, Git/GitHub}, DCO sign-off}
-  \resumeSubItem{Platforms}{Linux, Windows}
+  \resumeSubItem{Frontend}{\textbf{React, Next.js, Tailwind CSS}, Framer Motion, Three.js}
+  \resumeSubItem{Backend}{\textbf{Node.js, Express}, REST APIs, MongoDB, Mongoose}
+  \resumeSubItem{AI \& Data}{\textbf{OpenAI APIs, Embeddings, Pinecone}, Vector Search, LLMs}
+  \resumeSubItem{Tools \& APIs}{\textbf{Git/GitHub, CI/CD}, Apollo, SignalHire, React Query, Zustand}
+  \resumeSubItem{Testing \& Platforms}{\textbf{React Testing Library, ESLint}, Linux, Windows}
 \resumeSubHeadingListEnd
 
 \vspace{-3pt}
@@ -102,36 +103,39 @@
 \resumeSubHeadingListStart
 
 \resumeSubheading
+  {RemoteStar}{Remote}
+  {SDE Intern: TypeScript, Express, MongoDB, Next.js, OpenAI}{Mar 2025 -- Nov 2025; Mar 2026 -- Present}
+
+\resumeItemListStart
+
+  \resumeItem{MPC Matching}
+    {Designed and shipped a production \textbf{candidate-to-company matching engine} using \textbf{LLM scoring} and Pinecone semantic search, with function-aware scoring across real open roles.}
+
+\resumeItem{BD Signals}
+  {Built a weekly pipeline processing \textbf{$\sim$16,000 jobs} across \textbf{$\sim$2,000 companies}, with freshness filtering, deduplication, change detection, role filtering, and automated staleness handling.}
+
+\resumeItem{Scale \& Reliability}
+  {Reduced matching backfill costs to \textbf{$\sim\$10$} using an OpenAI company-size pre-filter; fixed production LLM timeouts by moving long-running work to a \textbf{background queue} with bounded polling.}
+
+  \resumeItem{Full-Stack Delivery}
+    {Built MPC profiles, job citations, redacted CVs, and outreach tooling with \textbf{Next.js/React}; implemented Apollo contact discovery with SignalHire fallback and caching, and owned CI/CD and production backfills.}
+
+\resumeItemListEnd
+
+\resumeSubheading
   {PRED (PangoLabs)}{Bangalore}
   {SDE Intern: React, Zustand, Tailwind CSS, React Query}{Nov 2025 -- Mar 2026}
 
 \resumeItemListStart
 
-  \resumeItem{UI Implementation}
-    {Converted \textbf{Figma designs} into reusable, responsive \textbf{React} components with a focus on consistency, maintainability, and production-ready UI.}
-
   \resumeItem{Frontend Engineering}
-    {Built a high-performance \textbf{React + Vite} frontend using \textbf{Tailwind CSS} and \textbf{Zustand} for predictable global and local state management.}
+    {Built production-ready interfaces using \textbf{React + Vite}, Tailwind CSS, and Zustand, translating Figma designs into reusable responsive components.}
 
   \resumeItem{Data \& APIs}
-    {Integrated frontend components with backend services using \textbf{React Query}, implementing cached data fetching, loading states, and resilient API-driven UI.}
+    {Integrated frontend applications with backend services using \textbf{React Query}, implementing cached data fetching, loading states, and resilient API-driven UI.}
 
-\resumeItemListEnd
-
-\resumeSubheading
-  {RemoteStar}{Remote}
-  {SDE Intern: Next.js, TypeScript, Framer Motion, Tailwind CSS}{Mar 2025 -- Nov 2025}
-
-\resumeItemListStart
-
-  \resumeItem{Frontend Development}
-    {Developed the frontend of an \textbf{AI-powered online interview platform} using \textbf{Next.js}, TypeScript, Tailwind CSS, and Framer Motion.}
-
-  \resumeItem{UI/UX Implementation}
-    {Designed and implemented responsive interfaces focused on usability, consistency, and smooth user interactions.}
-
-  \resumeItem{API Integration}
-    {Connected frontend components with backend services, maintaining clean \textbf{API communication} and reliable data flow.}
+  \resumeItem{UI Systems}
+    {Developed reusable components and interaction patterns focused on maintainability, consistency, and responsive behavior.}
 
 \resumeItemListEnd
 
@@ -145,8 +149,8 @@
 
 \resumeSubItem{Headlamp \href{https://github.com/kubernetes-sigs/headlamp}{\color{blue}{(CNCF, kubernetes-sigs/headlamp)}}}{
     \begin{itemize}
-        \item Shipped \textbf{10+ contributions} to the Kubernetes web UI, working across CRD list components, the resource-map relations graph, router internals, units helpers, resource-table identity, API-discovery logging, and the story-test layer.
-        \item Worked within an existing \textbf{TypeScript/React} codebase using \textbf{React Testing Library} and ESLint, contributing changes across UI, application logic, and testing infrastructure.
+        \item Shipped \textbf{10+ contributions} to the Kubernetes web UI across CRD components, resource-map relations, router internals, units helpers, resource tables, API-discovery logging, and testing.
+        \item Contributed to the existing \textbf{TypeScript/React} codebase using React Testing Library and ESLint across UI, application logic, and testing infrastructure.
     \end{itemize}
 }
 
@@ -160,16 +164,14 @@
 
 \resumeSubItem{CompilerTech -- \href{https://compilertech.org}{\color{blue}{Official Website Deployment}}} {
     \begin{itemize}
-        \item Built and deployed the official CompilerTech website as a freelance frontend developer, delivering a responsive, high-performance interface with clean \textbf{UI/UX} and smooth interactions.
-        \item Focused on accessibility, responsive behavior, and consistent performance across mobile and desktop.
+        \item Built and deployed the official CompilerTech website with a responsive, high-performance interface focused on clean \textbf{UI/UX}.
         \item Tech: \textbf{Next.js}, \textbf{TypeScript}, \textbf{Tailwind CSS}, \textbf{Framer Motion}
     \end{itemize}
 }
 
 \resumeSubItem{Segfault -- \href{https://segfault.compilertech.org/}{\color{blue}{Official Hackathon Website Deployment}}} {
     \begin{itemize}
-        \item Developed and deployed the official Segfault Hackathon website with a dynamic, responsive frontend and smooth \textbf{Framer Motion} interactions.
-        \item Implemented event details, timeline, and submission sections with a scalable, component-based interface.
+        \item Developed and deployed the official Segfault Hackathon website with a dynamic, responsive frontend and scalable component-based interface.
         \item Tech: \textbf{Next.js}, \textbf{TypeScript}, \textbf{Tailwind CSS}
     \end{itemize}
 }
@@ -188,14 +190,11 @@
 
 \resumeItemListStart
 
-  \resumeItem{Reusable UI}
-    {Designed and implemented a reusable \textbf{Framer Motion}-based loader used across the website.}
+  \resumeItem{Web Development}
+    {Built production pages and reusable UI components for the PointBlank website, including the \href{https://pointblank.club/lore}{\textcolor{blue}{/lore}} page and PBCTF registration flow using \textbf{Next.js} and \textbf{Tailwind CSS}.}
 
-  \resumeItem{Page Development}
-    {Built the entire \href{https://pointblank.club/lore}{\textcolor{blue}{/lore}} page from UI/UX design through responsive frontend implementation using \textbf{Next.js} and \textbf{Tailwind CSS}.}
-
-  \resumeItem{Form Development}
-    {Designed and developed the PBCTF registration page, including form logic, UI, and frontend implementation.}
+  \resumeItem{UI Systems}
+    {Designed and implemented reusable \textbf{Framer Motion} components and responsive interaction patterns used across the website.}
 
 \resumeItemListEnd
 
@@ -226,7 +225,7 @@
 
   \resumeSubheading
     {Dayananda Sagar College of Engineering, Bangalore}{Karnataka, India}
-    {Bachelor of Engineering - Computer Science and Engineering; \textbf{CGPA: 7.65}}{Nov 2023 -- Present}
+    {Bachelor of Engineering - Computer Science and Engineering}{Nov 2023 -- Present}
 
 \resumeSubHeadingListEnd
 
