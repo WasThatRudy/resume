@@ -1,0 +1,233 @@
+%------------------------
+% Resume
+%------------------------
+
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Rudraksha Singh Sengar}}\\
+  \href{mailto:rudraksharss@gmail.com}{Email: rudraksharss@gmail.com} &
+  \href{https://github.com/WasThatRudy}{Github: github.com/WasThatRudy} \\
+  Mobile: +91-708-1499-993 &
+  \href{https://www.linkedin.com/in/rudrakshasingh18/}{LinkedIn: linkedin.com/in/rudrakshasingh18} \\
+  \href{https://www.rudraksha.tech}{\textbf{Portfolio: rudraksha.tech}} & \\
+\end{tabular*}
+
+\vspace{-3pt}
+
+%-----------SKILLS-----------------
+\section{Skills}
+\resumeSubHeadingListStart
+  \resumeSubItem{Languages}{\textbf{JavaScript, TypeScript}, HTML, CSS}
+  \resumeSubItem{Frontend}{\textbf{React, Next.js, Tailwind CSS}, Framer Motion, Three.js}
+  \resumeSubItem{Backend}{\textbf{Node.js, Express}, REST APIs, MongoDB, Mongoose}
+  \resumeSubItem{AI \& Data}{\textbf{OpenAI APIs, Embeddings, Pinecone}, Vector Search, LLMs}
+  \resumeSubItem{Tools \& APIs}{\textbf{Git/GitHub, CI/CD}, Apollo, SignalHire, React Query, Zustand}
+  \resumeSubItem{Testing \& Platforms}{\textbf{React Testing Library, ESLint}, Linux, Windows}
+\resumeSubHeadingListEnd
+
+\vspace{-3pt}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {RemoteStar}{Remote}
+  {SDE Intern: TypeScript, Express, MongoDB, Next.js, OpenAI}{Mar 2025 -- Nov 2025; Mar 2026 -- Present}
+
+\resumeItemListStart
+
+  \resumeItem{MPC Matching}
+    {Designed and shipped a production \textbf{candidate-to-company matching engine} using \textbf{LLM scoring} and Pinecone semantic search, with function-aware scoring across real open roles.}
+
+\resumeItem{BD Signals}
+  {Built a weekly pipeline processing \textbf{$\sim$16,000 jobs} across \textbf{$\sim$2,000 companies}, with freshness filtering, deduplication, change detection, role filtering, and automated staleness handling.}
+
+\resumeItem{Scale \& Reliability}
+  {Reduced matching backfill costs to \textbf{$\sim\$10$} using an OpenAI company-size pre-filter; fixed production LLM timeouts by moving long-running work to a \textbf{background queue} with bounded polling.}
+
+  \resumeItem{Full-Stack Delivery}
+    {Built MPC profiles, job citations, redacted CVs, and outreach tooling with \textbf{Next.js/React}; implemented Apollo contact discovery with SignalHire fallback and caching, and owned CI/CD and production backfills.}
+
+\resumeItemListEnd
+
+\resumeSubheading
+  {PRED (PangoLabs)}{Bangalore}
+  {SDE Intern: React, Zustand, Tailwind CSS, React Query}{Nov 2025 -- Mar 2026}
+
+\resumeItemListStart
+
+  \resumeItem{Frontend Engineering}
+    {Built production-ready interfaces using \textbf{React + Vite}, Tailwind CSS, and Zustand, translating Figma designs into reusable responsive components.}
+
+  \resumeItem{Data \& APIs}
+    {Integrated frontend applications with backend services using \textbf{React Query}, implementing cached data fetching, loading states, and resilient API-driven UI.}
+
+  \resumeItem{UI Systems}
+    {Developed reusable components and interaction patterns focused on maintainability, consistency, and responsive behavior.}
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{-3pt}
+
+%-----------OPEN SOURCE-----------------
+\section{Open Source Contributions}
+\resumeSubHeadingListStart
+
+\resumeSubItem{Headlamp \href{https://github.com/kubernetes-sigs/headlamp}{\color{blue}{(CNCF, kubernetes-sigs/headlamp)}}}{
+    \begin{itemize}
+        \item Shipped \textbf{10+ contributions} to the Kubernetes web UI across CRD components, resource-map relations, router internals, units helpers, resource tables, API-discovery logging, and testing.
+        \item Contributed to the existing \textbf{TypeScript/React} codebase using React Testing Library and ESLint across UI, application logic, and testing infrastructure.
+    \end{itemize}
+}
+
+\resumeSubHeadingListEnd
+
+\vspace{-3pt}
+
+%-----------FREELANCE-----------------
+\section{Freelance Projects}
+\resumeSubHeadingListStart
+
+\resumeSubItem{CompilerTech -- \href{https://compilertech.org}{\color{blue}{Official Website Deployment}}} {
+    \begin{itemize}
+        \item Built and deployed the official CompilerTech website with a responsive, high-performance interface focused on clean \textbf{UI/UX}.
+        \item Tech: \textbf{Next.js}, \textbf{TypeScript}, \textbf{Tailwind CSS}, \textbf{Framer Motion}
+    \end{itemize}
+}
+
+\resumeSubItem{Segfault -- \href{https://segfault.compilertech.org/}{\color{blue}{Official Hackathon Website Deployment}}} {
+    \begin{itemize}
+        \item Developed and deployed the official Segfault Hackathon website with a dynamic, responsive frontend and scalable component-based interface.
+        \item Tech: \textbf{Next.js}, \textbf{TypeScript}, \textbf{Tailwind CSS}
+    \end{itemize}
+}
+
+\resumeSubHeadingListEnd
+
+\vspace{-3pt}
+
+%-----------VOLUNTEERING-----------------
+\section{Volunteering}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {PointBlank (Coding Club)}{Member}
+  {Frontend Developer: Next.js, TypeScript, Framer Motion, Tailwind CSS, Cloudinary}{Feb 2025 -- Present}
+
+\resumeItemListStart
+
+  \resumeItem{Web Development}
+    {Built production pages and reusable UI components for the PointBlank website, including the \href{https://pointblank.club/lore}{\textcolor{blue}{/lore}} page and PBCTF registration flow using \textbf{Next.js} and \textbf{Tailwind CSS}.}
+
+  \resumeItem{UI Systems}
+    {Designed and implemented reusable \textbf{Framer Motion} components and responsive interaction patterns used across the website.}
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{-3pt}
+
+%-----------ACHIEVEMENTS-----------------
+\section{Achievements}
+\resumeSubHeadingListStart
+
+  \resumeSubItem{Technical Escape Room (CTF)}
+    {Secured \textbf{1st place} among 35 teams in a competitive, time-bound Capture The Flag challenge -- March 2025.}
+
+  \resumeSubItem{NER Tech Hackathon}
+    {Selected as a \textbf{Finalist} in a national-level hackathon organized by \textbf{Amantya Technologies}.}
+
+  \resumeSubItem{Aventus Hackathon}
+    {Selected as a \textbf{Finalist} in a hackathon organized by \textbf{Dayananda Sagar College of Engineering}.}
+
+\resumeSubHeadingListEnd
+
+\vspace{-3pt}
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Dayananda Sagar College of Engineering, Bangalore}{Karnataka, India}
+    {Bachelor of Engineering - Computer Science and Engineering}{Nov 2023 -- Present}
+
+\resumeSubHeadingListEnd
+
+\end{document}
